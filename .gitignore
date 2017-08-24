@@ -1,0 +1,11 @@
+# NetBeans Project
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Composer
+composer.phar
+/vendor/
