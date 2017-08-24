@@ -259,4 +259,4 @@ $pdf->writeHTMLCell(0, 0, '', '', $html_ttd, 0, 1);
 
 // Close and output PDF document
 // This method has several options, check the source code documentation for more information.
-$pdf->Output("Form Penilaian {$tahapan} {$skim} {$usulan[0]['nama_ketua']}.pdf", 'D');
+$pdf->Output("Form Penilaian {$tahapan} {$skim} {$usulan[0]['nama_ketua']}.pdf", 'I');
