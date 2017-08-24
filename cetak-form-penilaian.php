@@ -1,5 +1,6 @@
 <?php
-$connection_string = "host=localhost port=5432 dbname=belmawa user=postgres password=postgres options='--application_name=simbelmawa-php'";
+include 'db.php';
+
 $connection = pg_connect($connection_string);
 
 $id_plotting_reviewer = isset($_GET['id']) ? $_GET['id'] : '';
