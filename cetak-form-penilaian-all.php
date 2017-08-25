@@ -230,7 +230,7 @@ EOD;
 	$pdf->SetFont('times', 0, 11);
 	$komentar = TCPDF_STATIC::_escapeXML($komentar);
 	$pdf->writeHTMLCell(0, 0, '', '', "Komentar penilai : {$komentar}", 0, 1);
-	$pdf->Ln();
+	$pdf->Ln(5);
 
 	setlocale(LC_TIME, 'id');
 	$lokasi = ucfirst($lokasi);
