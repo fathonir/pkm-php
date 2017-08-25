@@ -62,3 +62,4 @@ left join (
 ) pendamping on pendamping.id_usulan_kegiatan = uk.id_usulan_kegiatan
 where 
 	uk.thn_pelaksanaan_kegiatan = $1 and tks.kd_tahapan_kegiatan = $2
+order by p.nama, u.judul
