@@ -57,15 +57,15 @@ $pdf->SetFont('times', '', 12, '', true);
 $connection = pg_connect($connection_string);
 
 $sql1 = file_get_contents('get-all-usulan-for-penilaian.sql');
-$result = pg_query_params($connection, $sql1, array('2017', $_GET['tahap']));
+$result = pg_query_params($connection, $sql1, array($_GET['tahun'], $_GET['tahap']));
 $usulan_set = pg_fetch_all($result);
 
 $sql2 = file_get_contents('get-all-anggota-for-penilaian.sql');
-$result = pg_query_params($connection, $sql2, array('2017', $_GET['tahap']));
+$result = pg_query_params($connection, $sql2, array($_GET['tahun'], $_GET['tahap']));
 $anggota_set = pg_fetch_all($result);
 
 $sql3 = file_get_contents('get-all-hasil-penilaian.sql');
-$result = pg_query_params($connection, $sql3, array('2017', $_GET['tahap']));
+$result = pg_query_params($connection, $sql3, array($_GET['tahun'], $_GET['tahap']));
 $penilaian_set = pg_fetch_all($result);
 
 
