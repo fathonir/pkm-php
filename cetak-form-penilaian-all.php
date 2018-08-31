@@ -242,7 +242,7 @@ EOD;
 			<tr>
 				<td width=\"300\"></td>
 				<td width=\"200\" align=\"center\">
-					Makassar, {$tanggal}<br/>Penilai<br/><br/><br/><br/>({$reviewer})
+					Yogyakarta, {$tanggal}<br/>Penilai<br/><br/><br/><br/>({$reviewer})
 				</td>
 			</tr>
 		</table>";
