@@ -27,7 +27,7 @@ join hibah.transaksi_kegiatan tk	on tk.id_transaksi_kegiatan = pr.id_transaksi_k
 join hibah.usulan_kegiatan uk		on uk.id_usulan_kegiatan = tk.id_usulan_kegiatan
 join hibah.usulan_pimnas up			on up.id_usulan_kegiatan = uk.id_usulan_kegiatan
 join hibah.usulan u					on u.id_usulan = uk.id_usulan
-join hibah.bidang b					on b.id_bidang = u.id_bidang
+left join hibah.bidang b					on b.id_bidang = u.id_bidang
 -- skim proposal
 join hibah.tahapan_kegiatan_skim tks	on tks.id_tahapan_kegiatan_skim = tk.id_tahapan_kegiatan_skim
 join hibah.skim_kegiatan skim			on skim.id_skim = tks.id_skim
